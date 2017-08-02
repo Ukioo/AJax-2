@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>  
+    <script>
+        // 状态码问题 ajax.status 监听
+        // 1,2,3,4,5
+        // 常见 404
+
+        // IE9以下浏览器是不会出发Onload的
+        // 所有的浏览器都支持onreadystatechange
+        // 当服务器进行响应时 ，每完成一个步骤都会触发这个事件。
+        // 处理完成一共有5个步骤
+        // 每个步骤都是用数字表示
+        // 0 - 4（0并监听不到）ajax.readyState 监听
+        // 数字到4 说明服务器接受并响应了
+        // 
+        $.ajax({
+            type: "method",
+            url: "url",
+            data: "data",
+            dataType: "dataType",
+            success: function (response) {
+                
+            }
+        });
+    </script>
+</body>
+</html>
